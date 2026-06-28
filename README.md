@@ -20,9 +20,19 @@
     - <font style="color:rgb(15, 17, 21);">镜面材质：根据反射定律计算反射方向，生成新的反射射线继续追踪</font>
 
 ### <font style="color:rgb(15, 17, 21);">2.2 关键技术原理</font>
-<font style="color:rgb(15, 17, 21);">反射向量计算： $ R=L_{in}−2(L_{in}⋅N)N $
+<font style="color:rgb(15, 17, 21);">反射向量计算： 
 
-<font style="color:rgb(15, 17, 21);">其中，$ L_{in} $为入射光线方向，N为表面法向量。</font>
+$$
+R=L_{in}−2(L_{in}⋅N)N 
+$$
+
+<font style="color:rgb(15, 17, 21);">其中，
+
+$$
+L_{in} 
+$$
+
+为入射光线方向，N为表面法向量。</font>
 
 <font style="color:rgb(15, 17, 21);">能量衰减机制</font><font style="color:rgb(15, 17, 21);">：</font>
 

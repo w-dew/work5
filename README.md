@@ -26,12 +26,7 @@ $$
 R=L_{in}−2(L_{in}⋅N)N 
 $$
 
-<font style="color:rgb(15, 17, 21);">其中，
-
-$$
-L_{in} 
-$$
-为入射光线方向，N为表面法向量。</font>
+<font style="color:rgb(15, 17, 21);">其中， $$ L_{in} $$ 为入射光线方向，N为表面法向量。</font>
 
 <font style="color:rgb(15, 17, 21);">能量衰减机制</font><font style="color:rgb(15, 17, 21);">：</font>
 

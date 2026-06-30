@@ -21,9 +21,12 @@
     - <font style="color:rgb(15, 17, 21);">玻璃材质：根据斯涅尔定律计算折射方向，同时处理菲涅尔反射效应</font>
 
 ### <font style="color:rgb(15, 17, 21);">2.2 关键技术原理</font>
-1. <font style="color:rgb(15, 17, 21);">反射向量计算： </font>$ R=L_{in}−2(L_{in}⋅N)N $
+1. <font style="color:rgb(15, 17, 21);">反射向量计算： </font>
+$$
+R=L_{in}−2(L_{in}⋅N)N
+$$
 
-<font style="color:rgb(15, 17, 21);">其中， $ L_{in} $ 为入射光线方向，N为表面法向量。</font>
+<font style="color:rgb(15, 17, 21);">其中， $$ L_{in} $$ 为入射光线方向，N为表面法向量。</font>
 
 2. <font style="color:rgb(15, 17, 21);">能量衰减机制：</font>
 + <font style="color:rgb(15, 17, 21);">每次镜面反射时，光线能量乘以反射率（本实验设为0.8）</font>
@@ -32,7 +35,7 @@
 3. <font style="color:rgb(15, 17, 21);">菲涅尔效应</font>
 
 <font style="color:rgb(15, 17, 21);">反射率近似计算：  
-</font>
+
 $$ R(θ)=
 {R_0+(1−R_0)(1−cosθ)}^5 
 $$
@@ -161,9 +164,9 @@ else:
 
 **<font style="color:rgb(15, 17, 21);">关键技术点</font>**<font style="color:rgb(15, 17, 21);">：</font>
 
-1. <font style="color:rgb(15, 17, 21);">光线从空气进入玻璃：</font><font style="color:rgb(15, 17, 21);">η</font><font style="color:rgb(15, 17, 21);">=</font><font style="color:rgb(15, 17, 21);">1.0</font><font style="color:rgb(15, 17, 21);">/</font><font style="color:rgb(15, 17, 21);">1.5</font>_<font style="color:rgb(15, 17, 21);">η</font>_<font style="color:rgb(15, 17, 21);">=</font><font style="color:rgb(15, 17, 21);">1.0/1.5</font>
-2. <font style="color:rgb(15, 17, 21);">光线从玻璃射出空气：</font><font style="color:rgb(15, 17, 21);">η</font><font style="color:rgb(15, 17, 21);">=</font><font style="color:rgb(15, 17, 21);">1.5</font><font style="color:rgb(15, 17, 21);">/</font><font style="color:rgb(15, 17, 21);">1.0</font>_<font style="color:rgb(15, 17, 21);">η</font>_<font style="color:rgb(15, 17, 21);">=</font><font style="color:rgb(15, 17, 21);">1.5/1.0</font>
-3. <font style="color:rgb(15, 17, 21);">全反射处理：当</font><font style="color:rgb(15, 17, 21);">k</font><font style="color:rgb(15, 17, 21);"><</font><font style="color:rgb(15, 17, 21);">0</font>_<font style="color:rgb(15, 17, 21);">k</font>_<font style="color:rgb(15, 17, 21);"><</font><font style="color:rgb(15, 17, 21);">0</font><font style="color:rgb(15, 17, 21);">时发生全反射，强制为反射</font>
+1. <font style="color:rgb(15, 17, 21);">光线从空气进入玻璃：η=1.0/1.5
+2. <font style="color:rgb(15, 17, 21);">光线从玻璃射出空气：η=1.5/1.0
+3. <font style="color:rgb(15, 17, 21);">全反射处理：当k<0时发生全反射，强制为反射</font>
 4. <font style="color:rgb(15, 17, 21);">法线方向修正：根据光线在物体内部/外部调整法线方向</font>
 
 ### <font style="color:rgb(15, 17, 21);">3.6 抗锯齿（MSAA）（选做内容2）</font>

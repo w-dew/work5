@@ -21,7 +21,8 @@
     - <font style="color:rgb(15, 17, 21);">玻璃材质：根据斯涅尔定律计算折射方向，同时处理菲涅尔反射效应</font>
 
 ### <font style="color:rgb(15, 17, 21);">2.2 关键技术原理</font>
-1. <font style="color:rgb(15, 17, 21);">反射向量计算： </font>
+1. <font style="color:rgb(15, 17, 21);">反射向量计算：
+
 $$
 R=L_{in}−2(L_{in}⋅N)N
 $$
